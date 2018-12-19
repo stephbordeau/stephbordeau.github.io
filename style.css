@@ -2,3 +2,14 @@ body {
   background-color: #EEE2DC;
   color: #123C69;
 }
+
+a {
+  color: #AC3B61;
+}
+
+.foo {
+  background-color: #EDC7B7;
+}
+.bar {
+  background-color: #BAB2B5;
+}

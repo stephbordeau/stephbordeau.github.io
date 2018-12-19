@@ -8,6 +8,12 @@ a {
   color: #AC3B61;
 }
 
+.header {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .foo {
   background-color: #EDC7B7;
 }

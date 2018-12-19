@@ -1,7 +1,7 @@
 body {
   background-color: #EEE2DC;
   color: #123C69;
-  font-family: 'Charm', cursive;
+  font-family: 'Thasadith', sans-serif;
 }
 
 a {
@@ -9,6 +9,7 @@ a {
 }
 
 .header {
+  font-family: 'Charm', cursive;
   font-size: 4rem;
   font-weight: 400;
   text-align: center;

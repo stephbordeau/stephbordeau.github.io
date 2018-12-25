@@ -1,23 +1,66 @@
+html,body {
+  height: 100%;
+}
 body {
-  background-color: #EEE2DC;
+  background-color: #FFF;
   color: #123C69;
-  font-family: 'Thasadith', sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
-a {
-  color: #AC3B61;
-}
-
-.header {
+header {
   font-family: 'Charm', cursive;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  left: 0;
+  padding: .5rem 0 1rem;
+  position: fixed;
+  right: 0;
   text-align: center;
+  top: 0;
 }
 
-.foo {
-  background-color: #EDC7B7;
+.about {
+  display: flex;
+  margin: 1rem 20rem;
 }
-.bar {
-  background-color: #BAB2B5;
+
+.about-text,
+.about-img {
+  flex: 1;
+  margin: 1rem;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-text .name {
+  font-weight: 900;
+  margin: 0;
+}
+
+.about-text .title {
+  font-style: italic;
+}
+
+.about-text div {
+  margin-bottom: 1rem;
+}
+
+.parallax { 
+  background-attachment: fixed;
+  background-image: url("sunflower.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%; 
+}
+
+#map-durham,
+#map-raleigh {
+  background-color: grey;
+  height: 400px;
+  width: 100%;
 }

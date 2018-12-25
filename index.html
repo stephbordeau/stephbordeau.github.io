@@ -3,8 +3,43 @@
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function initMaps() {
+        var durham = {lat: 35.995300, lng: -78.899181};
+        var durhamMapEl = document.querySelector('.map-durham');
+        var durhamMap = new google.maps.Map(durhamMapEl, {zoom: 4, center: durham});
+        var durhamMarker = new google.maps.Marker({position: durham, map: durhamMap});
+
+        var raleigh = {lat: 35.800532, lng: -78.645726};
+        var raleighMapEl = document.querySelector('.map-raleigh');
+        var raleighMap = new google.maps.Map(raleighMapEl, {zoom: 4, center: raleigh});
+        var raleighMarker = new google.maps.Marker({position: raleigh, map: raleighMap});
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOYKTKeJNy5jO3pqXGMa542nZ13my2f6o&callback=initMaps"></script>
   </head>
   <body>
-    <h1 class="header">Steph Bordeau Massage</h1>
+    <header>Steph Bordeau Massage</header>
+    <div class="parallax"></div>
+    <div class="about">
+      <div class="about-img">
+          <img src="steph.jpg">
+      </div>
+      <div class="about-text">
+        <div class="name">Stephanie Hupp Bordeau</div>
+        <div class="title">Licensed Massage and Bodywork Therapist (#17760), RYT-200</div>
+        <div>As a person with a nurturing and intuitive spirit, becoming a massage therapist was a natural progression in my journey. I have experienced the deep, profound healing that occurs through regular bodywork and wanted to be able to share this incredible healing gift with others. I am also a lifelong student of yoga and attribute my intuitive touch to years of work towards cultivating a deep awareness of Self. My approach to massage is to create a healing environment that is safe and nurturing, calming to the nervous system, and non judgmental, with intentions to allow pain to release from the body&#8226;mind&#8226;spirit. During a session with me, you can expect an integrative approach, blending different modalities such as Swedish, deep tissue, myofascial release and trigger point therapy to achieve your desired healing goals. I also love the healing properties of aromatherapy and sound healing and often incorporate these complimentary modalities into my sessions to create a deeper healing experience for you.</div>
+        <div>I am a 2018 Graduate from Gwinnett College graduating Summa Cum Laude. While attending school, I also completed my prenatal massage certification. I completed my 200-hr Registered Yoga Teacher Training in 2013 and later went on to obtain my certification to teach prenatal yoga.</div>
+        <div>I am honored to be a part of your healing journey and will welcome you with an open heart.</div>
+      </div>
+    </div>
+    <div class="locations">
+      <div class="map-durham">
+
+      </div>
+      <div class="map-raleigh">
+        
+      </div>
+    </div>
   </body>
 </html>

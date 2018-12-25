@@ -58,8 +58,8 @@ header {
   height: 90%; 
 }
 
-#map-durham,
-#map-raleigh {
+.map-durham,
+.map-raleigh {
   background-color: grey;
   height: 400px;
   width: 100%;

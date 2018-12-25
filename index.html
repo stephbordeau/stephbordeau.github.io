@@ -7,12 +7,12 @@
       function initMaps() {
         var durham = {lat: 35.995300, lng: -78.899181};
         var durhamMapEl = document.querySelector('.map-durham');
-        var durhamMap = new google.maps.Map(durhamMapEl, {zoom: 4, center: durham});
+        var durhamMap = new google.maps.Map(durhamMapEl, {zoom: 14, center: durham});
         var durhamMarker = new google.maps.Marker({position: durham, map: durhamMap});
 
         var raleigh = {lat: 35.800532, lng: -78.645726};
         var raleighMapEl = document.querySelector('.map-raleigh');
-        var raleighMap = new google.maps.Map(raleighMapEl, {zoom: 4, center: raleigh});
+        var raleighMap = new google.maps.Map(raleighMapEl, {zoom: 14, center: raleigh});
         var raleighMarker = new google.maps.Marker({position: raleigh, map: raleighMap});
       }
     </script>

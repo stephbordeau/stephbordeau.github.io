@@ -9,7 +9,15 @@ body {
   margin: 0;
 }
 
+hr {
+  background-color: #DDD;
+  border: none;
+  height: 1px;
+}
+
 header {
+  background: #FFF;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
   font-family: 'Charm', cursive;
   font-size: 2.5rem;
   font-weight: 400;
@@ -21,9 +29,17 @@ header {
   top: 0;
 }
 
+.content {
+  margin: 1rem 20rem;
+}
+
+.content h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
 .about {
   display: flex;
-  margin: 1rem 20rem;
 }
 
 .about-text,
@@ -58,9 +74,27 @@ header {
   height: 90%; 
 }
 
+.locations {
+  display: flex;
+}
+
+.location {
+  margin: 1rem;
+  width: 100%;
+}
+
+.location address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.location-name {
+  font-weight: bold;
+}
+
 .map-durham,
 .map-raleigh {
-  background-color: grey;
+  border: 1px solid #999;
   height: 400px;
-  width: 100%;
 }

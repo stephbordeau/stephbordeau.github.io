@@ -1,4 +1,110 @@
-@@ -108,3 +108,40 @@ header {
+html,body {
+  height: 100%;
+}
+body {
+  background-color: #FFF;
+  color: #123C69;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+hr {
+  background-color: #DDD;
+  border: none;
+  height: 1px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background: #FFF;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+  font-family: 'Charm', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  left: 0;
+  padding: .5rem 0 1rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.content {
+  margin: 1rem 20rem;
+}
+
+.content h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+}
+
+.about-text,
+.about-img {
+  flex: 1;
+  margin: 1rem;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-text .name {
+  font-weight: 900;
+  margin: 0;
+}
+
+.about-text .title {
+  font-style: italic;
+}
+
+.about-text div {
+  margin-bottom: 1rem;
+}
+
+.parallax { 
+  background-attachment: fixed;
+  background-image: url("sunflower.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%; 
+}
+
+.locations {
+  display: flex;
+}
+
+.location {
+  margin: 1rem;
+  width: 100%;
+}
+
+.location address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.location-name {
+  font-weight: bold;
+}
+
+.map-durham,
+.map-raleigh {
+  border: 1px solid #999;
+  height: 400px;
+}
+
+.tippy {
+  cursor: pointer;
   font-style: italic;
   text-decoration: underline;
 }

@@ -4,20 +4,6 @@
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
-    <script>
-      function initMaps() {
-        var durham = { lat: 35.9953, lng: -78.899181 };
-        var durhamMapEl = document.querySelector(".map-durham");
-        var durhamMap = new google.maps.Map(durhamMapEl, { zoom: 14, center: durham });
-        var durhamMarker = new google.maps.Marker({ position: durham, map: durhamMap });
-
-        var raleigh = { lat: 35.800532, lng: -78.645726 };
-        var raleighMapEl = document.querySelector(".map-raleigh");
-        var raleighMap = new google.maps.Map(raleighMapEl, { zoom: 14, center: raleigh });
-        var raleighMarker = new google.maps.Marker({ position: raleigh, map: raleighMap });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOYKTKeJNy5jO3pqXGMa542nZ13my2f6o&callback=initMaps"></script>
   </head>
   <body>
     <header>Steph Bordeau Massage</header>
@@ -91,33 +77,10 @@
       <h2>Request an Appointment</h2>
       <div class="appointments">
         <div>
-          <p>Tuesdays and the first Saturday of the month in Durham at Sahaja Space. <a href="https://clients.mindbodyonline.com/ASP/adm/adm_appt_search.asp?studioid=513281&amp;view=week&amp;sSU=&amp;qParam=&amp;trn=0&amp;lvl=&amp;catid=&amp;prodid=&amp;date=01%2F05%2F19&amp;classid=0&amp;loc=1&amp;optForwardingLink=&amp;nLgIn=&amp;prodGroupId=&amp;tg=3&amp;vt=&amp;justloggedin=&amp;pMode=0&amp;stype=%2D104&amp;page=">Sign up online</a></p>
-        </div>
-        <div>
-          <p>Thursdays in Raleigh at Townsend Acupuncture and Family Wellness. Please email me at <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a> to request and appointment.</p>
+          <p>Please email me at <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a> to request an appointment.</p>
         </div>
         <div>
             <b>Cancellation policy:</b> Appointments must be canceled within 24 hours of you confirmed appointment. Appointment cancelations less than 24 hours will be charged the full amount of the massage appointment. 
-        </div>
-      </div>
-      <hr />
-      <h2>Locations</h2>
-      <div class="locations">
-        <div class="location">
-          <address>
-            <div class="location-name">Sahaja Space</div>
-            <div>125 E Parrish St, Suite 200</div>
-            <div>Durham, NC 27701</div>
-          </address>
-          <div class="map-durham"></div>
-        </div>
-        <div class="location">
-          <address>
-            <div class="location-name">Townsend Acupuncture and Family Wellness</div>
-            <div>1520 Glenwood Ave</div>
-            <div>Raleigh, NC 27608</div>
-          </address>
-          <div class="map-raleigh"></div>
         </div>
       </div>
     </div>

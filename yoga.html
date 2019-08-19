@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      const debounce = (fn) => {
+        let frame;
+        return (...params) => {
+          if (frame) { 
+            cancelAnimationFrame(frame);
+          }
+          frame = requestAnimationFrame(() => {
+            fn(...params);
+          });
+        }
+      };
+      const storeScroll = () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+      };
+      document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+      storeScroll();
+    </script>
+    <title>Steph Bordeau Massage - Yoga</title>
+  </head>
+  <body>
+    <header class="page-header pt-1 pb-2 fixed-top">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pl-5">
+          <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
+            <img src="images/facebook.png" height="32px" class="p-1">
+          </a>
+          <a href="https://www.instagram.com/stephbordeaumassage/">
+            <img src="images/instagram_color.png" height="32px">
+          </a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2 text-dark" href="services.html">Services</a>
+              <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
+              <a class="p-2 text-dark active" href="yoga.html">Yoga</a>
+              <a class="p-2 text-dark" href="about.html">About</a>
+              <a class="p-2 text-dark" href="schedule.html">Schedule</a>
+            </nav>
+        </div>
+      </div>
+    </header>
+    <div class="mb-5 sunflower-container">
+      <img src="images/sunflower-sm.jpg" class="sunflower">
+    </div>
+    <div class="container mb-5">
+      <div class="row">
+        <h2 class="w-100 text-center">Yoga Classes</h2>
+        <p class="text-center mb-0">Weekly drop in classes are currently being offered at Sahaja Space</p>
+      </div>
+      <hr class="my-5 w-100">
+      <div class="row mt-3">
+        <h5 class="w-100">Tuesdays 10:30 - 11:30am</h5>
+        <h6 class="w-100">Gentle yoga, Pranyama + Aromatherapy</h6>
+        <p>Settle into your body and find ease in your day. Through slow mindful movement we will focus on using pranayama + aromatherapy to release tension. Asanas will be entered into with love and compassion and will be explored at a pace that allows the breath to discover and unravel any stickiness you may be experiencing.</p>
+        <p><a href="https://clients.mindbodyonline.com/classic/ws?studioid=513281&stype=-7&sView=week&sLoc=0&date=08/12/19">Sign up online</a></p>
+      </div>
+      <div class="row mt-3">
+        <h5 class="w-100">Tuesdays 11:45am - 12:15pm (starting Sept 3rd)</h5>
+        <h6 class="w-100">Extended Savasana with Massage + Aromatherapy</h6>
+        <p>During a restful Savasana gentle therapeutic massage techniques with aromatherapy will be offered to each student by licensed therapist and yoga teacher Stephanie Hupp Bordeau, LMBT #17760 encouraging deeper relaxation.</p>
+        <p><a href="https://clients.mindbodyonline.com/classic/ws?studioid=513281&stype=-7&sView=week&sLoc=0&date=08/12/19">Sign up online</a></p>
+      </div>
+    </div>
+  </body>
+</html>

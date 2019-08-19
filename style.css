@@ -1,36 +1,49 @@
-html,body {
-  height: 100%;
+div, p {
+  width: 100%;
 }
-body {
-  background-color: #FFF;
-  color: #123C69;
-  font-family: sans-serif;
-  font-weight: 300;
-  margin: 0;
+
+.page-header {
+  background-color: rgba(0, 0, 0, .1);
+  transition: background-color .5s;
+}
+
+html:not([data-scroll='0']) .page-header {
+  background-color: #fff;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.page-header-logo {
+  font-family: 'Charm', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.sunflower-container {
+  height: 500px;
+  overflow: hidden;
+}
+
+.sunflower {
+  margin-top: -140px;
+}
+
+img.arvigo {
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none !important;
+}
+
+nav .active {
+  border-bottom: 2px solid #343a40;
+  color: #121416 !important;
 }
 
 hr {
   background-color: #DDD;
   border: none;
   height: 1px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-header {
-  background: #FFF;
-  box-shadow: 0 3px 10px rgba(0,0,0,.1);
-  font-family: 'Charm', cursive;
-  font-size: 2.5rem;
-  font-weight: 400;
-  left: 0;
-  padding: .5rem 0 1rem;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
 }
 
 .content {

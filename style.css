@@ -27,6 +27,10 @@ html:not([data-scroll='0']) .page-header {
   margin-top: -140px;
 }
 
+.chakra-sunflower {
+  width: 100%;
+}
+
 img.arvigo {
   border-radius: 10px;
 }

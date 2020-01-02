@@ -7,6 +7,18 @@ div, p {
   transition: background-color .5s;
 }
 
+.promo {
+  background: rgb(253, 254, 226);
+  border: 1px solid rgba(110,79,27,.7);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+  left: 50px;
+  padding: 2rem;
+  position: absolute;
+  top: 150px;
+  width: 45%;
+}
+
 html:not([data-scroll='0']) .page-header {
   background-color: #fff;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
@@ -25,6 +37,7 @@ html:not([data-scroll='0']) .page-header {
 
 .sunflower {
   margin-top: -140px;
+  width: 100%;
 }
 
 .chakra-sunflower {
@@ -86,13 +99,13 @@ hr {
   margin-bottom: 1rem;
 }
 
-.parallax { 
+.parallax {
   background-attachment: fixed;
   background-image: url("sunflower.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%; 
+  height: 90%;
 }
 
 .locations {
@@ -126,8 +139,8 @@ hr {
   text-decoration: underline;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {

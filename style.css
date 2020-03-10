@@ -2,7 +2,7 @@ div, p {
   width: 100%;
 }
 
-.page-header {
+.desktop .page-header {
   background-color: rgba(0, 0, 0, .1);
   transition: background-color .5s;
 }
@@ -19,7 +19,7 @@ div, p {
   width: 45%;
 }
 
-html:not([data-scroll='0']) .page-header {
+html:not([data-scroll='0']) .desktop .page-header {
   background-color: #fff;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
@@ -139,39 +139,60 @@ hr {
   text-decoration: underline;
 }
 
+.mobile {
+  display: none;
+  margin: 3rem 0 1rem;
+}
+
+.mobile p,
+.mobile ul {
+  font-size: .875rem;
+}
+
+.mobile .page-header {
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.mobile img.hero {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.mobile section header {
+  margin: 1rem;
+  text-align: center;
+}
+
+.mobile section p:not(.card-text) {
+  padding: 0 1rem;
+}
+
+.mobile section ul {
+  padding-right: 1rem;
+}
+
+.mobile section .card {
+  margin: 1rem;
+  width: calc(100% - 2rem);
+}
+
+
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    header {
-      position: relative;
-    }
-    .content {
-      margin: 1rem;
-    }
-     .parallax {
+    .desktop {
       display: none;
     }
-    .about,
-    .locations {
+    .mobile {
       display: block;
-    }
-    .about-text,
-    .appointments {
-      margin: 2rem;
-    }
-    .services {
-      margin-right: 2rem;
-    }
-    .about-img {
-      margin: 2rem 1rem;
-    }
-    hr {
-      margin-top: 3rem;
-    }
-    .location {
-      width: auto;
-      margin-bottom: 5rem;
     }
 }

@@ -1,18 +1,16 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="components/header/header.js"></script>
     <script>
       const debounce = (fn) => {
         let frame;
         return (...params) => {
-          if (frame) { 
+          if (frame) {
             cancelAnimationFrame(frame);
           }
           frame = requestAnimationFrame(() => {
@@ -29,54 +27,66 @@
     <title>Steph Bordeau Massage - Schedule</title>
   </head>
   <body>
-    <header class="page-header pt-1 pb-2 fixed-top">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pl-5">
-          <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
-            <img src="images/facebook.png" height="32px" class="p-1">
-          </a>
-          <a href="https://www.instagram.com/stephbordeaumassage/">
-            <img src="images/instagram_color.png" height="32px">
-          </a>
-        </div>
-        <div class="col-4 text-center">
-          <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="services.html">Services</a>
-              <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
-              <a class="p-2 text-dark" href="yoga.html">Yoga</a>
-              <a class="p-2 text-dark" href="about.html">About</a>
-              <a class="p-2 text-dark active" href="schedule.html">Schedule</a>
-            </nav>
-        </div>
-      </div>
-    </header>
-    <div class="mb-5 sunflower-container">
-      <img src="images/sunflower-sm.jpg" class="sunflower">
-    </div>
-    <div class="container mb-5">
-      <div class="row">
-        <h2 class="w-100 text-center mb-0">Schedule an Appointment</h2>
-        <hr class="my-5 w-100">
-        <p><strong>Steph Bordeau Massage</strong> &mdash; <em>Grove Park Village, Holly Springs</em></p>
-        <div class="ml-5">
-          <p>Wednesdays from 10:30am - 2:30pm</p>
-          <p>Text or email to schedule: <a href="tel:9198894060">919-889-4060</a> &nbsp;&nbsp; <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a></p>
+    <div class="desktop">
+      <header class="page-header pt-1 pb-2 fixed-top">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pl-5">
+            <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
+              <img src="images/facebook.png" height="32px" class="p-1">
+            </a>
+            <a href="https://www.instagram.com/stephbordeaumassage/">
+              <img src="images/instagram_color.png" height="32px">
+            </a>
           </div>
-        <p><strong>Sahaja Space</strong> &mdash; <em>2007 Chapel Hill Rd, Durham</em></p>
-        <div class="ml-5">
-          <p>Thursdays from 4pm - 8pm</p>
-          <p>1st Saturday of the month from 1pm - 6pm</p>
-          <p><a href="https://clients.mindbodyonline.com/classic/ws?studioid=513281&stype=-105&sTG=3&sView=day&sLoc=0&date=08/15/19">Schedule online</a></p>
+          <div class="col-4 text-center">
+            <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="services.html">Services</a>
+                <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
+                <a class="p-2 text-dark" href="yoga.html">Yoga</a>
+                <a class="p-2 text-dark" href="about.html">About</a>
+                <a class="p-2 text-dark active" href="schedule.html">Schedule</a>
+              </nav>
+          </div>
         </div>
-        <p><strong>Loka Integrative Wellness</strong> &mdash; <em>2515 Fairview Rd #203, Raleigh</em></p>
-        <div class="ml-5">
-          <p>3rd Saturday of the month from 3:30pm - 6:30pm</p>
-          <p>Text or email to schedule: <a href="tel:9198894060">919-889-4060</a> &nbsp;&nbsp; <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a></p>
+      </header>
+      <div class="mb-5 sunflower-container">
+        <img src="images/sunflower-sm.jpg" class="sunflower">
+      </div>
+      <div class="container mb-5">
+        <div class="row">
+          <h2 class="w-100 text-center mb-0">Schedule an Appointment</h2>
+          <hr class="my-5 w-100">
+          <p><strong>Steph Bordeau Massage</strong> &mdash; <em>Grove Park Village, Holly Springs</em></p>
+          <div class="ml-5">
+            <p>Wednesdays from 10:30am - 2:30pm</p>
+            <p>Text or email to schedule: <a href="tel:9198894060">919-889-4060</a> &nbsp;&nbsp; <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a></p>
+            </div>
+          <p><strong>Sahaja Space</strong> &mdash; <em>2007 Chapel Hill Rd, Durham</em></p>
+          <div class="ml-5">
+            <p>Thursdays from 4pm - 8pm</p>
+            <p>1st Saturday of the month from 1pm - 6pm</p>
+            <p><a href="https://clients.mindbodyonline.com/classic/ws?studioid=513281&stype=-105&sTG=3&sView=day&sLoc=0&date=08/15/19">Schedule online</a></p>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="mobile">
+      <sbm-header></sbm-header>
+      <header class="page-header">Schedule an Appointment</header>
+      <section>
+        <p><strong>Steph Bordeau Massage</strong><br><em>Grove Park Village, Holly Springs</em></p>
+        <p>Wednesdays from 10:30am - 2:30pm</p>
+        <p>Text or email to schedule: <a href="tel:9198894060">919-889-4060</a> &nbsp;&nbsp; <a href="mailto:stephbordeaumassage@gmail.com">stephbordeaumassage@gmail.com</a></p>
+      </section>
+      <hr>
+      <section>
+        <p><strong>Sahaja Space</strong><br><em>2007 Chapel Hill Rd, Durham</em></p>
+        <p>Thursdays from 4pm - 8pm<br>1st Saturday of the month from 1pm - 6pm</p>
+        <p><a href="https://clients.mindbodyonline.com/classic/ws?studioid=513281&stype=-105&sTG=3&sView=day&sLoc=0&date=08/15/19">Schedule online</a></p>
+    </section>
     </div>
   </body>
 </html>

@@ -1,18 +1,16 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="components/header/header.js"></script>
     <script>
       const debounce = (fn) => {
         let frame;
         return (...params) => {
-          if (frame) { 
+          if (frame) {
             cancelAnimationFrame(frame);
           }
           frame = requestAnimationFrame(() => {
@@ -29,47 +27,66 @@
     <title>Steph Bordeau Massage - About</title>
   </head>
   <body>
-    <header class="page-header pt-1 pb-2 fixed-top">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pl-5">
-          <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
-            <img src="images/facebook.png" height="32px" class="p-1">
-          </a>
-          <a href="https://www.instagram.com/stephbordeaumassage/">
-            <img src="images/instagram_color.png" height="32px">
-          </a>
+    <div class="desktop">
+      <header class="page-header pt-1 pb-2 fixed-top">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pl-5">
+            <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
+              <img src="images/facebook.png" height="32px" class="p-1">
+            </a>
+            <a href="https://www.instagram.com/stephbordeaumassage/">
+              <img src="images/instagram_color.png" height="32px">
+            </a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="services.html">Services</a>
+                <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
+                <a class="p-2 text-dark" href="yoga.html">Yoga</a>
+                <a class="p-2 text-dark active" href="about.html">About</a>
+                <a class="p-2 text-dark" href="schedule.html">Schedule</a>
+            </nav>
+          </div>
         </div>
-        <div class="col-4 text-center">
-          <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="services.html">Services</a>
-              <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
-              <a class="p-2 text-dark" href="yoga.html">Yoga</a>
-              <a class="p-2 text-dark active" href="about.html">About</a>
-              <a class="p-2 text-dark" href="schedule.html">Schedule</a>
-          </nav>
+      </header>
+      <div class="mb-5 sunflower-container">
+        <img src="images/sunflower-sm.jpg" class="sunflower">
+      </div>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-md-7 order-md-2">
+            <h5 class="mb-0">Stephanie Hupp Bordeau</h5>
+            <p class="font-weight-lighter font-italic mb-3">Licensed Massage and Bodywork Therapist (#17760), Arvigo&reg; Practitioner, RYT-200</p>
+            <p>As a person with a nurturing and intuitive spirit, becoming a massage therapist was a natural progression in her journey. Stephanie has experienced the deep, profound healing that occurs through regular bodywork and wanted to be able to share this incredible healing gift with others. She is also a lifelong student of yoga and attributes her intuitive touch to years of work towards cultivating a deep awareness of Self. Her approach to massage is to create a healing environment that is safe and nurturing, calming to the nervous system, and non judgmental, with intentions to allow pain to release from the body&bullet;mind&bullet;spirit.</p>
+            <p>Stephanie is a 2018 Graduate from Gwinnett College graduating Summa Cum Laude. While in School, Stephanie developed a deep connection with abdominal work and realized the healing power our core holds. In June, 2019, Stephanie completed her Arvigo&reg; Therapy training and is passionate about the beauty of this work. She offers The Arvigo Techniques of Maya Abdominal Therapy&reg; as well as integrative therapeutic massage which beautifully blends different modalities such as Swedish, deep tissue, myofascial release and trigger point therapy which allows for a treatment session that meets the client where they’re at in their unique healing journey.</p>
+            <p>As a lover of yoga and a lifelong student, Stephanie enjoys teaching gentle and pre-natal yoga. She completed her 200-hr Registered Yoga Teacher Training in 2013 and her pre-natal yoga training in 2015. Stephanie continues to deepen her yoga practice and teachings through regular practice and participation in ongoing teacher training workshops.</p>
+            <p>Stephanie is honored to be a part of your healing journey and will welcome you with an open heart.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="img-fluid mx-auto" width="500" height="500" src="images/steph.jpg">
+          </div>
         </div>
       </div>
-    </header>
-    <div class="mb-5 sunflower-container">
-      <img src="images/sunflower-sm.jpg" class="sunflower">
     </div>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-md-7 order-md-2">
-          <h5 class="mb-0">Stephanie Hupp Bordeau</h5>
-          <p class="font-weight-lighter font-italic mb-3">Licensed Massage and Bodywork Therapist (#17760), Arvigo&reg; Practitioner, RYT-200</p>
-          <p>As a person with a nurturing and intuitive spirit, becoming a massage therapist was a natural progression in her journey. Stephanie has experienced the deep, profound healing that occurs through regular bodywork and wanted to be able to share this incredible healing gift with others. She is also a lifelong student of yoga and attributes her intuitive touch to years of work towards cultivating a deep awareness of Self. Her approach to massage is to create a healing environment that is safe and nurturing, calming to the nervous system, and non judgmental, with intentions to allow pain to release from the body&bullet;mind&bullet;spirit.</p>
-          <p>Stephanie is a 2018 Graduate from Gwinnett College graduating Summa Cum Laude. While in School, Stephanie developed a deep connection with abdominal work and realized the healing power our core holds. In June, 2019, Stephanie completed her Arvigo&reg; Therapy training and is passionate about the beauty of this work. She offers The Arvigo Techniques of Maya Abdominal Therapy&reg; as well as integrative therapeutic massage which beautifully blends different modalities such as Swedish, deep tissue, myofascial release and trigger point therapy which allows for a treatment session that meets the client where they’re at in their unique healing journey.</p>
-          <p>As a lover of yoga and a lifelong student, Stephanie enjoys teaching gentle and pre-natal yoga. She completed her 200-hr Registered Yoga Teacher Training in 2013 and her pre-natal yoga training in 2015. Stephanie continues to deepen her yoga practice and teachings through regular practice and participation in ongoing teacher training workshops.</p>
-          <p>Stephanie is honored to be a part of your healing journey and will welcome you with an open heart.</p>
+    <div class="mobile">
+      <sbm-header></sbm-header>
+      <header class="page-header">About Stephanie</header>
+      <section>
+        <div class="card">
+          <img src="images/steph.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Stephanie Hupp Bordeau</h5>
+            <p class="font-weight-lighter font-italic">Licensed Massage and Bodywork Therapist (#17760), Arvigo&reg; Practitioner, RYT-200</p>
+            <p class="card-text">As a person with a nurturing and intuitive spirit, becoming a massage therapist was a natural progression in her journey. Stephanie has experienced the deep, profound healing that occurs through regular bodywork and wanted to be able to share this incredible healing gift with others. She is also a lifelong student of yoga and attributes her intuitive touch to years of work towards cultivating a deep awareness of Self. Her approach to massage is to create a healing environment that is safe and nurturing, calming to the nervous system, and non judgmental, with intentions to allow pain to release from the body&bullet;mind&bullet;spirit.</p>
+            <p class="card-text">Stephanie is a 2018 Graduate from Gwinnett College graduating Summa Cum Laude. While in School, Stephanie developed a deep connection with abdominal work and realized the healing power our core holds. In June, 2019, Stephanie completed her Arvigo&reg; Therapy training and is passionate about the beauty of this work. She offers The Arvigo Techniques of Maya Abdominal Therapy&reg; as well as integrative therapeutic massage which beautifully blends different modalities such as Swedish, deep tissue, myofascial release and trigger point therapy which allows for a treatment session that meets the client where they’re at in their unique healing journey.</p>
+            <p class="card-text">As a lover of yoga and a lifelong student, Stephanie enjoys teaching gentle and pre-natal yoga. She completed her 200-hr Registered Yoga Teacher Training in 2013 and her pre-natal yoga training in 2015. Stephanie continues to deepen her yoga practice and teachings through regular practice and participation in ongoing teacher training workshops.</p>
+            <p class="card-text">Stephanie is honored to be a part of your healing journey and will welcome you with an open heart.</p>
+          </div>
         </div>
-        <div class="col-md-5 order-md-1">
-          <img class="img-fluid mx-auto" width="500" height="500" src="images/steph.jpg">
-        </div>
-      </div>
-    </div>
+      </section>
+</div>
   </body>
 </html>

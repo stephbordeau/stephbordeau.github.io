@@ -1,18 +1,16 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="components/header/header.js"></script>
     <script>
       const debounce = (fn) => {
         let frame;
         return (...params) => {
-          if (frame) { 
+          if (frame) {
             cancelAnimationFrame(frame);
           }
           frame = requestAnimationFrame(() => {
@@ -29,87 +27,205 @@
     <title>Steph Bordeau Massage - Arvigo&reg; Therapy</title>
   </head>
   <body>
-    <header class="page-header pt-1 pb-2 fixed-top">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pl-5">
-          <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
-            <img src="images/facebook.png" height="32px" class="p-1">
-          </a>
-          <a href="https://www.instagram.com/stephbordeaumassage/">
-            <img src="images/instagram_color.png" height="32px">
-          </a>
+    <div class="desktop">
+      <header class="page-header pt-1 pb-2 fixed-top">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pl-5">
+            <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
+              <img src="images/facebook.png" height="32px" class="p-1">
+            </a>
+            <a href="https://www.instagram.com/stephbordeaumassage/">
+              <img src="images/instagram_color.png" height="32px">
+            </a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="services.html">Services</a>
+                <a class="p-2 text-dark active" href="arvigo.html">Arvigo&reg; Therapy</a>
+                <a class="p-2 text-dark" href="yoga.html">Yoga</a>
+                <a class="p-2 text-dark" href="about.html">About</a>
+                <a class="p-2 text-dark" href="schedule.html">Schedule</a>
+              </nav>
+          </div>
         </div>
-        <div class="col-4 text-center">
-          <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+      </header>
+      <div class="mb-5 sunflower-container">
+        <img src="images/sunflower-sm.jpg" class="sunflower">
+      </div>
+      <div class="container mb-5">
+        <div class="row">
+          <h2 class="w-100 text-center">The Arvigo Techniques of Maya Abdominal Therapy&reg;</h2>
+          <div class="d-flex justify-content-center my-4">
+            <img src="images/arvigo.png">
+          </div>
         </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="services.html">Services</a>
-              <a class="p-2 text-dark active" href="arvigo.html">Arvigo&reg; Therapy</a>
-              <a class="p-2 text-dark" href="yoga.html">Yoga</a>
-              <a class="p-2 text-dark" href="about.html">About</a>
-              <a class="p-2 text-dark" href="schedule.html">Schedule</a>
-            </nav>
+        <div class="row">
+          <h4 class="w-100 mt-5">What Is It?</h4>
+          <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; are founded on an ancient Maya technique of abdominal massage. This technique is performed externally by gently guiding and supporting organs back into their optimal position, allowing for improved functioning for optimal health and wellness.</p>
+          <p>Arvigo&reg; Therapy is best known for addressing misalignment or congestion in the reproductive organs of both men and women, as well as many common digestive disorders.  The techniques effectively alleviate tissue congestion and organ constriction to improve the vital flows of energy, blood, lymph and nerves in the abdomen. They address and can release emotional and energetic tension from the abdomen. This assists to prevent the progression of chronic disease symptomology while improving the body’s ability to self repair and balance.</p>
+        </div>
+        <div class="row">
+          <h4 class="w-100 mt-5">Benefits</h4>
+          <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; support and enhance health and wellness throughout the life cycle for women, men, and children.</p>
+          <p>The following are the most common symptoms and conditions that Arvigo&reg; Therapy may help address:</p>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md">
+            <h6 class="w-100">For Everyone (infancy to elderly)</h6>
+            <ul>
+              <li>Digestive disorders (Crohn’s, Irritable Bowel Syndrome, Gastro Esophageal Reflux Disease, Gastritis, Constipation, Indigestion, etc.)</li>
+              <li>Muscular Tension</li>
+              <li>Urinary System (incontinence, frequent urinary infections, etc.)</li>
+              <li>Varicose Veins</li>
+              <li>Fertility Enhancement</li>
+              <li>Post Surgical (scar tissue, recovery, etc.)</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h6 class="w-100">For Women</h6>
+            <ul>
+              <li>Menstrual disorders (painful/irregular periods)</li>
+              <li>Pre-conception through postpartum</li>
+              <li>Discomforts of pregnancy; labor and birth preparation</li>
+              <li>C-section/hysterectomy surgery recovery</li>
+              <li>Menopause</li>
+              <li>Pelvic organ congestion (endometriosis, cysts, fibroids)</li>
+              <li>Polycystic ovarian syndrome</li>
+              <li>Chronic bladder/yeast infections</li>
+              <li>Pelvic organ prolapse</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h6 class="w-100">For Men</h6>
+            <ul>
+              <li>Early stages of BPH (Benign Prostatic Hypertrophy)</li>
+              <li>Prostatitis (mild)</li>
+              <li>Impotence, erectile dysfunction</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h4 class="w-100 mt-5">What To Expect During A Session</h4>
+          <ul>
+            <li>Comprehensive review of your past and present healthcare needs focusing on reproductive and digestive health</li>
+            <li>Upper and lower abdominal massage to help:
+              <ul>
+                <li><strong>Align</strong> reproductive and abdominal organs to optimal position</li>
+                <li><strong>Improve</strong> circulation to organs</li>
+                <li><strong>Promote</strong> vital flow to support the body’s inherent healing capacity</li>
+              </ul>
+            </li>
+            <li>Evaluation of pelvic alignment and application of bodywork to improve pelvic alignment when indicated</li>
+            <li><strong>Instruction in self-care massage</strong> - based on years of experience, practitioners find that the “home self-care“ techniques are the key to support the benefit of practitioner sessions. This is an important component to ensure you are receiving optimal benefits from the techniques.</li>
+            <li>Recomendations of complimentary supportive modalities to support your health and wellness that may include:
+              <ul>
+                <li>Faja - a traditional lower abdomen support wrap</li>
+                <li>Bajos - traditional herbal pelvic steam bath of the Maya</li>
+                <li>Castor oil packs</li>
+                <li>Nutritional and herbal support</li>
+                <li>Lifestyle education </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h6 class="w-100">How many sessions will I need?</h6>
+          <p>Typically, 2-3 professional sessions (at a minimum) are required to address most conditions. Clients who perform their self-care massage on a routine basis report an improvement in their symptoms.</p>
+        </div>
+        <div class="row">
+          <h6 class="w-100">What are the causes of organ misalignment?</h6>
+          <ul>
+            <li>Injury to the sacrum or tailbone from a fall, car accidents, etc</li>
+            <li>Pelvic ligaments that have weakened due to overstretching during pregnancy and birth</li>
+            <li>High Impact exercise, running on cement surfaces, high impact aerobics, etc</li>
+            <li>Lifting and carrying heavy objects before or during menstruation and too soon after childbirth</li>
+            <li>Time and gravity</li>
+            <li>Past surgeries</li>
+            <li>Weak pelvic floor muscles</li>
+            <li>Chronic muscle spasm around the low back and sacrum</li>
+            <li>Emotional armoring</li>
+          </ul>
+        </div>
+        <div class="row">
+          <h6 class="w-100">What are the contraindications to receiving Arvigo&reg; Therapy?</h6>
+          <p>When applied under the guidance of a practitioner there are few if any contraindications. In general, no direct massage is applied over the uterus in the following situations:</p>
+          <ul>
+            <li>during menstrual cycle</li>
+            <li>within 6 weeks post normal vaginal birth or 3 months post Caesarian birth</li>
+            <li>when IUD is present for birth control</li>
+            <li>if there is cancer or active infection in the abdominal cavity</li>
+            <li>during first trimester of pregnancy</li>
+          </ul>
+          <p><em>Consult with your practitioner for variations that may be applicable in certain conditions.</em></p>
+        </div>
+        <div class="row">
+          <h4 class="w-100 mt-5">Origins of Arvigo&reg; Therapy</h4>
+          <div class="d-flex justify-content-center my-4">
+            <figure class="figure">
+              <img class="figure-img" src="images/arvigo_small.png">
+              <figcaption class="figure-caption text-center">IxChel, Maya Goddess of Healing</figcaption>
+            </figure>
+          </div>
+          <p><strong>Dr. Rosita Arvigo, DN</strong>, is a naprapathic physician and master herbalist who has lived and studied with traditional healers in Central America for more than 30 years. She apprenticed with the renowned Maya Shaman Don Eljio Panti for 10 years until his passing in 1996 at the age of 103.</p>
+          <p>Dr. Arvigo learned traditional pregnancy care from Miss Hortence Robinson, a well-known herbal midwife in Belize.</p>
+          <p>She combined her knowledge of anatomy, physiology and naprapathy (study of muscles, ligaments, connective tisues) with her extensive acquired background in traditional healing methods, and formulated the Arvigo Techniques of Maya Abdominal Therapy&reg;.  Dr. Arvigo established the Arvigo Institute in 2000 and trains healthcare professionals worldwide.</p>
+          <div class="d-flex justify-content-center my-4">
+            <figure class="figure">
+              <img class="figure-img" src="images/rosita.png">
+              <figcaption class="figure-caption text-center">Rosita &amp; Don Ellijio Panti<br>Belize, Central America</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
-    </header>
-    <div class="mb-5 sunflower-container">
-      <img src="images/sunflower-sm.jpg" class="sunflower">
     </div>
-    <div class="container mb-5">
-      <div class="row">
-        <h2 class="w-100 text-center">The Arvigo Techniques of Maya Abdominal Therapy&reg;</h2>
-        <div class="d-flex justify-content-center my-4">
-          <img src="images/arvigo.png">
-        </div>
-      </div>
-      <div class="row">
-        <h4 class="w-100 mt-5">What Is It?</h4>
+    <div class="mobile">
+      <sbm-header></sbm-header>
+      <header class="page-header">Arvigo&reg; Therapy</header>
+      <img class="hero" src="images/arvigo.png">
+      <section>
+        <h5 class="text-center">What Is It?</h5>
         <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; are founded on an ancient Maya technique of abdominal massage. This technique is performed externally by gently guiding and supporting organs back into their optimal position, allowing for improved functioning for optimal health and wellness.</p>
         <p>Arvigo&reg; Therapy is best known for addressing misalignment or congestion in the reproductive organs of both men and women, as well as many common digestive disorders.  The techniques effectively alleviate tissue congestion and organ constriction to improve the vital flows of energy, blood, lymph and nerves in the abdomen. They address and can release emotional and energetic tension from the abdomen. This assists to prevent the progression of chronic disease symptomology while improving the body’s ability to self repair and balance.</p>
-      </div>
-      <div class="row">
-        <h4 class="w-100 mt-5">Benefits</h4>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">Benefits</h5>
         <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; support and enhance health and wellness throughout the life cycle for women, men, and children.</p>
         <p>The following are the most common symptoms and conditions that Arvigo&reg; Therapy may help address:</p>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md">
-          <h6 class="w-100">For Everyone (infancy to elderly)</h6>
-          <ul>
-            <li>Digestive disorders (Crohn’s, Irritable Bowel Syndrome, Gastro Esophageal Reflux Disease, Gastritis, Constipation, Indigestion, etc.)</li>
-            <li>Muscular Tension</li>
-            <li>Urinary System (incontinence, frequent urinary infections, etc.)</li>
-            <li>Varicose Veins</li>
-            <li>Fertility Enhancement</li>
-            <li>Post Surgical (scar tissue, recovery, etc.)</li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <h6 class="w-100">For Women</h6>
-          <ul>
-            <li>Menstrual disorders (painful/irregular periods)</li>
-            <li>Pre-conception through postpartum</li>
-            <li>Discomforts of pregnancy; labor and birth preparation</li>
-            <li>C-section/hysterectomy surgery recovery</li>
-            <li>Menopause</li>
-            <li>Pelvic organ congestion (endometriosis, cysts, fibroids)</li>
-            <li>Polycystic ovarian syndrome</li>
-            <li>Chronic bladder/yeast infections</li>
-            <li>Pelvic organ prolapse</li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <h6 class="w-100">For Men</h6>
-          <ul>
-            <li>Early stages of BPH (Benign Prostatic Hypertrophy)</li>
-            <li>Prostatitis (mild)</li>
-            <li>Impotence, erectile dysfunction</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <h4 class="w-100 mt-5">What To Expect During A Session</h4>
+        <h6 class="ml-3">For Everyone (infancy to elderly):</h6>
+        <ul>
+          <li>Digestive disorders (Crohn’s, Irritable Bowel Syndrome, Gastro Esophageal Reflux Disease, Gastritis, Constipation, Indigestion, etc.)</li>
+          <li>Muscular Tension</li>
+          <li>Urinary System (incontinence, frequent urinary infections, etc.)</li>
+          <li>Varicose Veins</li>
+          <li>Fertility Enhancement</li>
+          <li>Post Surgical (scar tissue, recovery, etc.)</li>
+        </ul>
+        <h6 class="ml-3">For Women:</h6>
+        <ul>
+          <li>Menstrual disorders (painful/irregular periods)</li>
+          <li>Pre-conception through postpartum</li>
+          <li>Discomforts of pregnancy; labor and birth preparation</li>
+          <li>C-section/hysterectomy surgery recovery</li>
+          <li>Menopause</li>
+          <li>Pelvic organ congestion (endometriosis, cysts, fibroids)</li>
+          <li>Polycystic ovarian syndrome</li>
+          <li>Chronic bladder/yeast infections</li>
+          <li>Pelvic organ prolapse</li>
+        </ul>
+        <h6 class="ml-3">For Men:</h6>
+        <ul>
+          <li>Early stages of BPH (Benign Prostatic Hypertrophy)</li>
+          <li>Prostatitis (mild)</li>
+          <li>Impotence, erectile dysfunction</li>
+        </ul>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">What To Expect During A Session</h5>
         <ul>
           <li>Comprehensive review of your past and present healthcare needs focusing on reproductive and digestive health</li>
           <li>Upper and lower abdominal massage to help:
@@ -131,13 +247,15 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="row">
-        <h6 class="w-100">How many sessions will I need?</h6>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">How many sessions will I need?</h5>
         <p>Typically, 2-3 professional sessions (at a minimum) are required to address most conditions. Clients who perform their self-care massage on a routine basis report an improvement in their symptoms.</p>
-      </div>
-      <div class="row">
-        <h6 class="w-100">What are the causes of organ misalignment?</h6>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">What are the causes of organ misalignment?</h5>
         <ul>
           <li>Injury to the sacrum or tailbone from a fall, car accidents, etc</li>
           <li>Pelvic ligaments that have weakened due to overstretching during pregnancy and birth</li>
@@ -149,9 +267,10 @@
           <li>Chronic muscle spasm around the low back and sacrum</li>
           <li>Emotional armoring</li>
         </ul>
-      </div>
-      <div class="row">
-        <h6 class="w-100">What are the contraindications to receiving Arvigo&reg; Therapy?</h6>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">What are the contraindications to receiving Arvigo&reg; Therapy?</h5>
         <p>When applied under the guidance of a practitioner there are few if any contraindications. In general, no direct massage is applied over the uterus in the following situations:</p>
         <ul>
           <li>during menstrual cycle</li>
@@ -161,9 +280,10 @@
           <li>during first trimester of pregnancy</li>
         </ul>
         <p><em>Consult with your practitioner for variations that may be applicable in certain conditions.</em></p>
-      </div>
-      <div class="row">
-        <h4 class="w-100 mt-5">Origins of Arvigo&reg; Therapy</h4>
+      </section>
+      <hr>
+      <section>
+        <h5 class="text-center">Origins of Arvigo&reg; Therapy</h5>
         <div class="d-flex justify-content-center my-4">
           <figure class="figure">
             <img class="figure-img" src="images/arvigo_small.png">
@@ -179,7 +299,7 @@
             <figcaption class="figure-caption text-center">Rosita &amp; Don Ellijio Panti<br>Belize, Central America</figcaption>
           </figure>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>

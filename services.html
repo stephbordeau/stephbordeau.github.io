@@ -1,13 +1,11 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@3/dist/themes/light-border.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="components/header/header.js"></script>
     <script>
       const debounce = (fn) => {
         let frame;
@@ -29,39 +27,121 @@
     <title>Steph Bordeau Massage - Services</title>
   </head>
   <body>
-    <header class="page-header pt-1 pb-2 fixed-top">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pl-5">
-          <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
-            <img src="images/facebook.png" height="32px" class="p-1">
-          </a>
-          <a href="https://www.instagram.com/stephbordeaumassage/">
-            <img src="images/instagram_color.png" height="32px">
-          </a>
+    <div class="desktop">
+      <header class="page-header pt-1 pb-2 fixed-top">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pl-5">
+            <a href="https://www.facebook.com/Steph-Bordeau-Massage-829996797381678/">
+              <img src="images/facebook.png" height="32px" class="p-1">
+            </a>
+            <a href="https://www.instagram.com/stephbordeaumassage/">
+              <img src="images/instagram_color.png" height="32px">
+            </a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark active" href="services.html">Services</a>
+                <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
+                <a class="p-2 text-dark" href="yoga.html">Yoga</a>
+                <a class="p-2 text-dark" href="about.html">About</a>
+                <a class="p-2 text-dark" href="schedule.html">Schedule</a>
+              </nav>
+          </div>
         </div>
-        <div class="col-4 text-center">
-          <a class="page-header-logo text-dark">Steph Bordeau Massage</a>
+      </header>
+      <div class="mb-5 sunflower-container">
+        <img src="images/sunflower-sm.jpg" class="sunflower">
+      </div>
+      <div class="container mb-5">
+        <div class="row mb-5">
+          <h2 class="w-100 text-center mb-4">Arvigo&reg; Therapy</h2>
+          <div class="d-flex justify-content-center mb-4">
+            <img src="images/arvigo-belly.jpg" class="arvigo">
+          </div>
+          <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; are founded on an ancient Maya technique of abdominal massage. This technique is performed externally by gently guiding and supporting organs back into their optimal position, allowing for improved functioning for optimal health and wellness. Arvigo&reg; Therapy is best known for addressing misalignment or congestion in the reproductive organs of both men and women, as well as many common digestive disorders.</p>
+          <p>** For women who are still menstruating, it is best to schedule your Arvigo&reg; Therapy sessions 5 days after the first day of your menstrual cycle up to 5 days before the start of your menstrual cycle.</p>
+          <p><strong>The first Arvigo&reg; Therapy session</strong> is two hours and includes a thorough client intake and health history review, a full treatment, and self-care instruction.</p>
+          <p><strong>Follow-up Arvigo&reg; Therapy sessions:</strong></p>
+          <ul>
+            <li>90 minute Arvigo&reg; Therapy session includes a full Arvigo&reg; treatment combined with integrative therapeutic massage that is unique to your healing needs </li>
+            <li>60 minute Arvigo&reg; Therapy session includes a full Arvigo&reg; treatment</li>
+          </ul>
+          <p><strong>Pricing:</strong></p>
+          <ul>
+            <li>Initial session (2 hours): $160</li>
+            <li>90 minutes: $115</li>
+            <li>60 minutes: $85</li>
+          </ul>
         </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark active" href="services.html">Services</a>
-              <a class="p-2 text-dark" href="arvigo.html">Arvigo&reg; Therapy</a>
-              <a class="p-2 text-dark" href="yoga.html">Yoga</a>
-              <a class="p-2 text-dark" href="about.html">About</a>
-              <a class="p-2 text-dark" href="schedule.html">Schedule</a>
-            </nav>
+        <hr class="my-5">
+        <div class="row mb-4">
+          <h2 class="w-100 text-center">Integrative Therapeutic Massage</h2>
+          <p>An integrative therapeutic massage blends the modalities of Swedish, deep tissue, myofascial release, trigger point therapy, cupping therapy and aromatherapy to create the best healing experience for you.</p>
+        </div>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card">
+              <img src="images/swedish.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Swedish</h5>
+                <p class="card-text">Swedish massage is used to relax the entire body. It is exceptionally beneficial for increasing the level of oxygen in the blood, decreasing muscle toxins, improving circulation and easing tension throughout the body.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/deeptissue.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Deep Tissue</h5>
+                <p class="card-text">Deep tissue massage is slow, deep and specific with the focus of accessing deeper layers of muscle tissue and connective tissue in order to release chronic muscle tension and pain.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/myofascial.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Myofascial Release</h5>
+                <p class="card-text">Myofascial Release uses sustained gentle pressure to stretch and loosen constricted fascia. It eliminates pain by relaxing contracted muscles and restoring range of motion to restricted tissue.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/triggerpoint.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Trigger Point Therapy</h5>
+                <p class="card-text">Trigger Point Therapy is specifically designed to alleviate the source of the pain through cycles of isolated pressure and release. A trigger point is a tight area or “knot” within muscle tissue that can cause both localized pain and pain in other parts of the body. In this type of massage, the recipient actively participates through deep breathing as well as identifying the exact location and intensity of the discomfort.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4"><strong>Pricing:</strong></p>
+          <ul>
+            <li>120 minutes: $160</li>
+            <li>&nbsp;90 minutes: $115</li>
+            <li>&nbsp;60 minutes: $85</li>
+          </ul>
+          <p class="mt-4 ml-4"><strong>10% off packages of 4:</strong> These packages can be shared among family members, be applied to Arvigo® follow-up sessions, and are valid for 12 months.</p>
+          <ul class="ml-4">
+            <li>90 minutes: $414 (savings of $46)</li>
+            <li>60 minutes: $306 (savings of $34)</li>
+          </ul>
+        </div>
+        <hr class="my-5">
+        <div class="row mb-5">
+          <h2 class="w-100 text-center">Prenatal Massage</h2>
+          <p>Prenatal massage is a relaxing and nurturing massage dedicated to relieving tension and pain the body experiences during pregnancy.</p>
+          <img src="images/prenatal.jpg" class="w-100 my-3">
+          <p class="mt-4"><strong>Pricing:</strong></p>
+          <ul>
+            <li>60 minutes: $85</li>
+          </ul>
         </div>
       </div>
-    </header>
-    <div class="mb-5 sunflower-container">
-      <img src="images/sunflower-sm.jpg" class="sunflower">
     </div>
-    <div class="container mb-5">
-      <div class="row mb-5">
-        <h2 class="w-100 text-center mb-4">Arvigo&reg; Therapy</h2>
-        <div class="d-flex justify-content-center mb-4">
-          <img src="images/arvigo-belly.jpg" class="arvigo">
-        </div>
+    <div class="mobile">
+      <sbm-header></sbm-header>
+      <header class="page-header">Services</header>
+      <section>
+        <header>Arvigo&reg; Therapy</header>
+        <img src="images/arvigo-belly.jpg" class="hero">
         <p>The Arvigo Techniques of Maya Abdominal Therapy&reg; are founded on an ancient Maya technique of abdominal massage. This technique is performed externally by gently guiding and supporting organs back into their optimal position, allowing for improved functioning for optimal health and wellness. Arvigo&reg; Therapy is best known for addressing misalignment or congestion in the reproductive organs of both men and women, as well as many common digestive disorders.</p>
         <p>** For women who are still menstruating, it is best to schedule your Arvigo&reg; Therapy sessions 5 days after the first day of your menstrual cycle up to 5 days before the start of your menstrual cycle.</p>
         <p><strong>The first Arvigo&reg; Therapy session</strong> is two hours and includes a thorough client intake and health history review, a full treatment, and self-care instruction.</p>
@@ -76,41 +156,38 @@
           <li>90 minutes: $115</li>
           <li>60 minutes: $85</li>
         </ul>
-      </div>
-      <hr class="my-5">
-      <div class="row mb-4">
-        <h2 class="w-100 text-center">Integrative Therapeutic Massage</h2>
+      </section>
+      <hr>
+      <section>
+        <header>Integrative Therapeutic Massage</header>
         <p>An integrative therapeutic massage blends the modalities of Swedish, deep tissue, myofascial release, trigger point therapy, cupping therapy and aromatherapy to create the best healing experience for you.</p>
-      </div>
-      <div class="row">
-        <div class="card-deck">
-          <div class="card">
-            <img src="images/swedish.png" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Swedish</h5>
-              <p class="card-text">Swedish massage is used to relax the entire body. It is exceptionally beneficial for increasing the level of oxygen in the blood, decreasing muscle toxins, improving circulation and easing tension throughout the body.</p>
-            </div>
+
+        <div class="card">
+          <img src="images/swedish.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Swedish</h5>
+            <p class="card-text">Swedish massage is used to relax the entire body. It is exceptionally beneficial for increasing the level of oxygen in the blood, decreasing muscle toxins, improving circulation and easing tension throughout the body.</p>
           </div>
-          <div class="card">
-            <img src="images/deeptissue.jpeg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Deep Tissue</h5>
-              <p class="card-text">Deep tissue massage is slow, deep and specific with the focus of accessing deeper layers of muscle tissue and connective tissue in order to release chronic muscle tension and pain.</p>
-            </div>
+        </div>
+        <div class="card">
+          <img src="images/deeptissue.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Deep Tissue</h5>
+            <p class="card-text">Deep tissue massage is slow, deep and specific with the focus of accessing deeper layers of muscle tissue and connective tissue in order to release chronic muscle tension and pain.</p>
           </div>
-          <div class="card">
-            <img src="images/myofascial.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Myofascial Release</h5>
-              <p class="card-text">Myofascial Release uses sustained gentle pressure to stretch and loosen constricted fascia. It eliminates pain by relaxing contracted muscles and restoring range of motion to restricted tissue.</p>
-            </div>
+        </div>
+        <div class="card">
+          <img src="images/myofascial.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Myofascial Release</h5>
+            <p class="card-text">Myofascial Release uses sustained gentle pressure to stretch and loosen constricted fascia. It eliminates pain by relaxing contracted muscles and restoring range of motion to restricted tissue.</p>
           </div>
-          <div class="card">
-            <img src="images/triggerpoint.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Trigger Point Therapy</h5>
-              <p class="card-text">Trigger Point Therapy is specifically designed to alleviate the source of the pain through cycles of isolated pressure and release. A trigger point is a tight area or “knot” within muscle tissue that can cause both localized pain and pain in other parts of the body. In this type of massage, the recipient actively participates through deep breathing as well as identifying the exact location and intensity of the discomfort.</p>
-            </div>
+        </div>
+        <div class="card">
+          <img src="images/triggerpoint.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Trigger Point Therapy</h5>
+            <p class="card-text">Trigger Point Therapy is specifically designed to alleviate the source of the pain through cycles of isolated pressure and release. A trigger point is a tight area or “knot” within muscle tissue that can cause both localized pain and pain in other parts of the body. In this type of massage, the recipient actively participates through deep breathing as well as identifying the exact location and intensity of the discomfort.</p>
           </div>
         </div>
         <p class="mt-4"><strong>Pricing:</strong></p>
@@ -119,22 +196,22 @@
           <li>&nbsp;90 minutes: $115</li>
           <li>&nbsp;60 minutes: $85</li>
         </ul>
-        <p class="mt-4 ml-4"><strong>10% off packages of 4:</strong> These packages can be shared among family members, be applied to Arvigo® follow-up sessions, and are valid for 12 months.</p>
-        <ul class="ml-4">
+        <p class="mt-4"><strong>10% off packages of 4:</strong> These packages can be shared among family members, be applied to Arvigo® follow-up sessions, and are valid for 12 months.</p>
+        <ul>
           <li>90 minutes: $414 (savings of $46)</li>
           <li>60 minutes: $306 (savings of $34)</li>
         </ul>
-      </div>
-      <hr class="my-5">
-      <div class="row mb-5">
-        <h2 class="w-100 text-center">Prenatal Massage</h2>
+      </section>
+      <hr>
+      <section>
+        <header>Prenatal Massage</header>
         <p>Prenatal massage is a relaxing and nurturing massage dedicated to relieving tension and pain the body experiences during pregnancy.</p>
         <img src="images/prenatal.jpg" class="w-100 my-3">
         <p class="mt-4"><strong>Pricing:</strong></p>
         <ul>
           <li>60 minutes: $85</li>
         </ul>
-      </div>
+      </section>
     </div>
   </body>
 </html>
